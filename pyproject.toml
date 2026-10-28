@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swainesber-aiefficiency_jd319"
+version = "0.1.0"
+description = "按段落统计AI 工程效率工具工程师·GPU 故障与作业自愈相关的长度分布，标出过长、过短与重复表达的部分"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "swainesber" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://swainesber.github.io"
+Repository = "https://github.com/swainesber/aiefficiency_jd319"
+Issues = "https://github.com/swainesber/aiefficiency_jd319/issues"
+
+[project.scripts]
+aiefficiency_jd319 = "aiefficiency_jd319:main"
+
+[tool.setuptools]
+py-modules = ["aiefficiency_jd319"]
